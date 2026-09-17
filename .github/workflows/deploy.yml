@@ -34,6 +34,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/node-app
-            git pull origin main
+            git pull origin master
             npm install --production
             sudo systemctl restart node-app
